@@ -1,45 +1,26 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Загрузка...</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: #000;
-            color: #fff;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        .container {
-            max-width: 500px;
-        }
-        h1 {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 18px;
-        }
-    </style>
+    <title>Перенаправлення</title>
     <script>
-        // Автоматический редирект через 3 секунды
-        setTimeout(function() {
-            window.location.href = "https://500vibokinl.com/2sYvvqcr"; // Указанная ссылка
-        }, 3000);
+        function isSupportedBrowser() {
+            const ua = navigator.userAgent;
+            return /chrome|safari|opr|opera/i.test(ua) && !/tiktok|instagram|fbav|line|snapchat/i.test(ua);
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            if (isSupportedBrowser()) {
+                window.location.href = "https://bit.ly/yourcustomlink"; // Сокращённая ссылка для редиректа
+            } else {
+                document.getElementById("image").style.display = "block"; // Показываем картинку
+            }
+        });
     </script>
 </head>
 <body>
-    <div class="container">
-        <h1>Загрузка...</h1>
-        <p>Пожалуйста, подождите, вы будете перенаправлены через несколько секунд.</p>
-    </div>
+    <img id="image" src="https://drive.google.com/uc?export=view&id=1p_K5YdpywmGSYcBBw6PacZ0M6V2jg6QA" 
+         alt="Открыть в браузере" style="display:none; width:100%;">
 </body>
 </html>
